@@ -1,0 +1,15 @@
+{
+	"heading": "Transformă text",
+  "button.transform":"Transformă",
+  "error1":"Nu ai scris nimic",
+  "error":"Nu se poate face conversia",
+  "error2":"într-o dată",
+  "error3":"într-o monedă",
+  "none":"nici unul",
+  "uppercase":"majuscule",
+  "lowercase":"litere mici",
+  "titlecase":"titlu",
+  "date":"dată",
+  "currency":"valută",
+  "Result":"Rezultat"
+}

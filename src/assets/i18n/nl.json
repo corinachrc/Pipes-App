@@ -1,0 +1,15 @@
+{
+  "heading": "Text umwandeln",
+  "button.transform":"Verwandeln",
+  "error1":"Du hast kein Trinkgeld gegeben",
+  "error":"Konvertieren nicht möglich",
+  "error2":"in ein Datum",
+  "error3":"in eine Währung",
+  "none":"keiner",
+  "uppercase":"großbuchstaben",
+  "lowercase":"kleinbuchstaben",
+  "titlecase":"titelkasten",
+  "date":"datum",
+  "currency":"währung",
+  "Result":"Ergebnis"
+}

@@ -1,0 +1,46 @@
+<app-languages></app-languages>
+<div class="container my-2 p-5">
+  <h1 class="mb-5">{{'heading'|translate}}</h1>
+  <form [formGroup]="form" class="input-group mx-1 row">
+
+    <div class="input-group-text p-1 col-sm-12 col-md-3 col-lg-2">
+      <select formControlName="choice" class="form-select my-2">
+        <option value="" selected>{{'none'|translate|titlecase}}</option>
+        <option value="uppercase">{{'uppercase'|translate|titlecase}}</option>
+        <option value="lowercase">{{'lowercase'|translate|titlecase}}</option>
+        <option value="titlecase">{{'titlecase'|translate|titlecase}}</option>
+        <option value="date">{{'date'|translate|titlecase}}</option>
+        <option value="currency">{{'currency'|translate|titlecase}}</option>
+      </select>
+    </div>
+
+    <div class="form-control p-1 col-sm-12 col-md-7 col-lg-8">
+      <textarea type="text" rows=3 formControlName="text" class="form-control"
+        placeholder="Type the text you want to be transformed"></textarea>
+    </div>
+
+    <button type="submit" (click)="onSubmit()"
+      class="btn btn-primary col-sm-12 col-md-2 col-lg-2">{{'button.transform'|translate}}</button>
+
+  </form>
+
+  <p *ngIf="form.value.isSubmitted==true&&option==''&&error==false" class="alert alert-success m-3">
+    <b>{{'Result'|translate}}: </b><br> {{text}}</p>
+  <p *ngIf="form.value.isSubmitted==true&&option=='uppercase'&&error==false" class="alert alert-success m-3">
+    <b>{{'Result'|translate}}: </b><br> {{text|uppercase}}</p>
+  <p *ngIf="form.value.isSubmitted==true&&option=='lowercase'&&error==false" class="alert alert-success m-3">
+    <b>{{'Result'|translate}}: </b><br> {{text|lowercase}}</p>
+  <p *ngIf="form.value.isSubmitted==true&&option=='titlecase'&&error==false" class="alert alert-success m-3">
+    <b>{{'Result'|translate}}: </b><br> {{text|titlecase|titleCasePipe}}</p>
+  <p *ngIf="form.value.isSubmitted==true&&option=='date'&&error==false" class="alert alert-success m-3">
+    <b>{{'Result'|translate}}: </b><br> {{text|date|myDatePipe}}</p>
+  <p *ngIf="form.value.isSubmitted==true&&option=='currency'&&error==false" class="alert alert-success m-3">
+    <b>{{'Result'|translate}}: </b><br> {{text|currency|myCurrencyPipe}}</p>
+  <p *ngIf="form.value.isSubmitted==true&&error==true&&errorMsg==1" class="alert alert-warning m-3">
+    {{'error1'|translate}}</p>
+  <p *ngIf="form.value.isSubmitted==true&&error==true&&errorMsg==2" class="alert alert-warning m-3">
+    {{'error'|translate}} <i><b>"{{text}}"</b></i> {{'error2'|translate}}</p>
+  <p *ngIf="form.value.isSubmitted==true&&error==true&&errorMsg==3" class="alert alert-warning m-3">
+    {{'error'|translate}} <i><b>"{{text}}"</b></i> {{'error3'|translate}}</p>
+
+</div>

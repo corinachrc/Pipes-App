@@ -1,0 +1,17 @@
+{
+	"heading": "Transform text",
+  "button.transform":"Transform",
+  "error1":"You did not tipe anyting",
+  "error":"Unable to convert",
+  "error2":"into a date",
+  "error3":"into a currency",
+  "none":"none",
+  "uppercase":"uppercase",
+  "lowercase":"lowercase",
+  "titlecase":"titlecase",
+  "date":"date",
+  "currency":"currency",
+  "Result":"Result"
+}
+
+

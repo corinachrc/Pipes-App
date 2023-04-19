@@ -1,0 +1,15 @@
+{
+  "heading": "テキストを変換する",
+  "button.transform":"変身",
+  "error1":"あなたは何も言いませんでした",
+  "error":"変換できません",
+  "error2":"デートに",
+  "error3":"通貨に",
+  "none":"なし",
+  "uppercase":"大文字",
+  "lowercase":"小文字",
+  "titlecase":"タイトルケース",
+  "date":"日にち",
+  "currency":"通貨",
+  "Result":"結果"
+}
